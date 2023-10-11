@@ -52,6 +52,10 @@ p {
   gap: 20px;
 }
 
+.tab-menu {
+  display: none;
+}
+
 .header-btn {
   border: none;
   background-color: transparent;
@@ -158,6 +162,10 @@ p {
   font-style: normal;
   font-weight: 400;
   cursor: pointer;
+}
+
+.hero-img {
+  display: none;
 }
 
 .result {
@@ -348,4 +356,151 @@ p {
   gap: 30px;
   justify-content: center;
   border-top: 1px solid #ddd;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 576px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .menu-open {
+    display: none;
+  }
+
+  .top-header {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: none;
+    border-top: none;
+
+    padding: 0;
+  }
+
+  .logo-header {
+    padding: 0;
+  }
+
+  .tab-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 22px;
+    padding-bottom: 18px;
+    gap: 51px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+  }
+
+  .mob-menu-link {
+    text-decoration: none;
+    color: #4c5866;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .hero {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 0;
+    gap: 29px;
+  }
+
+  .hero-all {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hero-img {
+    display: block;
+  }
+
+  .hero-title {
+    color: #4c5866;
+    font-family: Roboto;
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+
+  .hero-text {
+    color: #85859b;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .hero-btn {
+    width: 196px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .result-item {
+    flex-direction: column;
+    margin-bottom: 0;
+    width: 150px;
+    gap: 0;
+  }
+
+  .result-list {
+    display: flex;
+    list-style: none;
+    padding: 60px 0 40px 0;
+    margin: 0;
+    gap: 30px;
+  }
+  .result-big {
+    width: 330px;
+  }
+
+  .catalog-list {
+    gap: 40px 20px;
+    justify-content: space-between;
+  }
+
+  .catalog-item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .catalog-text {
+    margin-bottom: 20px;
+  }
+
+  .sponsor-link {
+    width: 240px;
+    height: 127px;
+  }
+
+  .scretchbook-img {
+    width: 449px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .footer-all {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-list {
+    border-top: none;
+  }
 }
