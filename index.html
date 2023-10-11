@@ -27,7 +27,7 @@
         </a>
 
         <div class="nav">
-          <button class="header-btn">
+          <button class="header-btn" data-menu-open type="button">
             <svg width="30" height="30">
               <use href="./image/sprite.svg#icon-mob-menu"></use>
             </svg>
@@ -44,6 +44,34 @@
                 <use href="./image/sprite.svg#icon-log_in"></use>
               </svg>
             </button>
+          </div>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+          <a href="./" class="logo-header logo-mob">
+            <svg width="140" height="22">
+              <use href="./image/sprite.svg#icon-logo-header"></use>
+            </svg>
+          </a>
+          <div class="container">
+            <button type="button" class="mob-menu-modal-close" data-menu-close>
+              <svg class="mob-menu-modal-icon" width="30" height="30">
+                <use href="./image/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="mob-menu-link">Продукция</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="./portfolio.html" class="mob-menu-link">Материалы</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link">О нас</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link">Контакты</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -162,6 +190,27 @@
         </div>
       </section>
 
+      <section class="sponsor">
+        <div class="container">
+          <div class="sponsor-list">
+            <a href="./" class="sponsor-link">
+              <img
+                src="./image/Sponsor1.svg"
+                alt="sponsor1"
+                class="sponsor-img"
+              />
+            </a>
+            <a href="./" class="sponsor-link">
+              <img
+                src="./image/Sponsor2.svg"
+                alt="sponsor2"
+                class="sponsor-img"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section class="scretchbook">
         <div class="container">
           <img src="./image/scretchbook.jpg" alt="scretchbook" />
@@ -174,6 +223,48 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="./" class="logo-footer">
+          <svg width="140" height="22">
+            <use href="./image/sprite.svg#icon-logo-footer"></use>
+          </svg>
+        </a>
+        <ul class="footer-list">
+          <il>
+            <a href="https://www.facebook.com/">
+              <svg width="24" height="24">
+                <use href="./image/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </il>
+          <il>
+            <a href="https://twitter.com/">
+              <svg width="24" height="24">
+                <use href="./image/sprite.svg#icon-tweeter"></use>
+              </svg>
+            </a>
+          </il>
+          <il>
+            <a href="https://instagram.com/">
+              <svg width="24" height="24">
+                <use href="./image/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </il>
+          <il>
+            <a href="https://youtube.com/">
+              <svg width="24" height="24">
+                <use href="./image/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </il>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
